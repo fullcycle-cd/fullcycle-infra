@@ -1,5 +1,5 @@
 module "ec2_instance" {
-  source  = "terraform-aws-modules/ec2-instance/aws"
+  source = "terraform-aws-modules/ec2-instance/aws"
 
   name = "single-instance"
 
@@ -11,6 +11,7 @@ module "ec2_instance" {
   tags = {
     Terraform   = "true"
     Environment = "dev"
+    Name        = "Teste pipeline"
   }
 }
 
